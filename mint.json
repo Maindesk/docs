@@ -7,9 +7,9 @@
   },
   "favicon": "/images/favicon.png",
   "colors": {
-    "primary": "#007AFF",
-    "light": "#5AC8FA",
-    "dark": "#0051D5"
+    "primary": "#F24C00",
+    "light": "#FF7A33",
+    "dark": "#C93D00"
   },
   "topbarLinks": [
     { "name": "Book a Demo", "url": "https://hellopixelpunch.com" }
