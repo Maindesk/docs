@@ -1,0 +1,47 @@
+---
+title: "User Notifications"
+description: "Complete reference for all notifications received by your platform users."
+---
+
+This page is a complete reference for every push notification that Your App sends to end users (the people who use your platform to manage their websites and businesses). Use this to understand what triggers each notification, what it looks like, and where it navigates.
+
+## User Notification Reference
+
+| Emoji | Notification Title | Trigger | What It Contains | Tap Action |
+|-------|-------------------|---------|-----------------|------------|
+| 🛒 | **New Order** | A customer places an order on the user's website | Customer name, order total | Opens the specific order detail page |
+| 👤 | **New Contact** | A new contact is added to the user's CRM | Contact name and email | Opens the specific contact detail page |
+| 📅 | **New Booking** | A new appointment is booked on the user's website | Client name, service, date and time | Opens the specific booking detail page |
+| 📋 | **Form Submission** | A visitor submits a form on the user's website | Form name, submitter name or email | Opens the specific form submission and marks it as read |
+| 🏷️ | **New Member** | A visitor subscribes to one of the user's membership plans | Subscriber name, plan name | Opens the specific member's detail page |
+
+## Notification Behavior
+
+**Smart Website Switching**
+
+Each notification is tied to a specific website. When a user taps a notification, the app automatically switches to the correct website context before navigating to the notification content. This means users never need to manually change their active website to view a notification — it happens automatically.
+
+For example, if a user has Website A selected in the app and receives a "New Order" notification from Website B, tapping the notification will:
+1. Switch the active website to Website B
+2. Navigate to the order detail page
+
+**Sound Cues**
+
+Each notification type plays a distinct sound so users can recognize the type of event before looking at their screen. Order sounds, booking sounds, and chat sounds are all different.
+
+**Notification Preferences**
+
+Users can individually enable or disable each notification type in **Profile → Notification Preferences**. See [Notification Preferences](/user-guide/notification-preferences) for more detail.
+
+## Troubleshooting User Notifications
+
+If a user reports not receiving notifications:
+
+1. **Check in-app preferences** — have them open Profile → Notification Preferences and confirm the relevant toggles are green (enabled)
+2. **Check system settings** — on iPhone: Settings → [App Name] → Notifications → Allow Notifications must be ON; on Android: Settings → Apps → [App Name] → Notifications must be ON
+3. **Confirm they're signed in** — notifications stop when users sign out of the app
+4. **Check device Do Not Disturb settings** — DND mode silences all notifications at the system level
+
+<Tip>
+  When onboarding new users, walk them through the notification permission prompt and notification preferences at first launch. Users who set up notifications during onboarding are significantly more likely to stay engaged with the app long-term.
+</Tip>

@@ -1,0 +1,144 @@
+---
+title: "Getting Started — What We Need From You"
+description: "Everything we need to build your branded app."
+---
+
+Getting your app built requires a small amount of information and setup from you. Everything in this guide is a one-time task — once it's done, it's done. Most partners complete this checklist within a few hours.
+
+---
+
+<Accordion title="Brand & Identity">
+
+This is the visual identity of your app. Have your brand assets ready before we start.
+
+| Item | Description | Example |
+|------|-------------|---------|
+| **App Name** | The name that appears in the App Store and on the home screen | "MyBrand App", "Acme Business" |
+| **Primary Brand Color** | Your main brand color in hex format | `#007AFF` |
+| **App Icon** | Your app icon image — must be at least 1024×1024px, PNG, no rounded corners (the store adds them) | `icon.png` |
+| **Splash Screen Logo** | The logo shown on the loading screen, PNG with transparent background | `splash-logo.png` |
+| **Drawer/Sidebar Logo** | Logo displayed in the navigation menu, PNG with transparent background, typically horizontal | `nav-logo.png` |
+| **Login Screen Logo** | Logo shown on the sign-in screen, can be the same as drawer logo | `login-logo.png` |
+
+</Accordion>
+
+<Accordion title="Platform Configuration">
+
+These are the technical connection details that link Your App to your platform.
+
+| Item | Description | How to Find It |
+|------|-------------|---------------|
+| **Admin Email** | The email address used for admin-level push notifications | Your primary platform email |
+| **Platform API Base URL** | The base URL for your platform's API endpoints | Provided by your platform (e.g., `https://api.yourplatform.com`) |
+| **API Key / Auth Token** | Authentication credentials for API access | In your platform's developer or settings section |
+| **Webhook Domain** | The domain Firebase Functions will send webhooks from (needed for allowlisting) | We provide this during setup |
+
+</Accordion>
+
+<Accordion title="Apple Developer Account">
+
+An Apple Developer account is required to publish on the App Store. If you don't have one, here's how to set it up.
+
+<Steps>
+  <Step title="Enroll in the Apple Developer Program">
+    Go to [developer.apple.com/programs](https://developer.apple.com/programs/) and click **Enroll**.
+    You'll need an Apple ID — use a company Apple ID rather than a personal one if possible.
+  </Step>
+  <Step title="Complete enrollment">
+    Apple will ask for your legal name and address, and may request identity verification.
+    Enrollment costs **$99/year** (paid directly to Apple — not through Pixel Punch).
+    Approval typically takes 24–48 hours, though it can be longer.
+  </Step>
+  <Step title="Add Pixel Punch as a team member">
+    Once enrolled, go to **Users and Access** in App Store Connect.
+    Invite us using our Apple ID (we'll provide this) with the **Admin** role so we can submit the app on your behalf.
+  </Step>
+  <Step title="Share your Team ID with us">
+    Your Team ID is a 10-character string found in **Membership** in your developer account.
+    We need this to configure your app's bundle identifier correctly.
+  </Step>
+</Steps>
+
+<Warning>
+  Apple Developer enrollment can take 24–48 hours. Start this step as early as possible — it's often the longest delay in the process.
+</Warning>
+
+</Accordion>
+
+<Accordion title="Google Play Account">
+
+A Google Play developer account is required to publish on Android.
+
+<Steps>
+  <Step title="Create a Google Play developer account">
+    Go to [play.google.com/console](https://play.google.com/console/) and sign in with a Google account.
+    Use a company Google account rather than a personal Gmail if possible.
+  </Step>
+  <Step title="Pay the registration fee">
+    Google charges a one-time registration fee of **$25** (paid directly to Google).
+  </Step>
+  <Step title="Complete account details">
+    Fill in your developer name (this appears on your Play Store listing — use your company name), email, and website.
+  </Step>
+  <Step title="Invite Pixel Punch as an admin">
+    In the Google Play Console, go to **Setup** → **API access** → **Manage users**.
+    Invite us with the **Release Manager** role so we can upload and publish the app on your behalf.
+  </Step>
+</Steps>
+
+</Accordion>
+
+<Accordion title="Google Analytics (Optional)">
+
+Traffic Analytics inside the app is powered by Google Analytics 4. This is optional — skip it if you don't need it, and it can always be added later.
+
+<Steps>
+  <Step title="Create a GA4 property">
+    Go to [analytics.google.com](https://analytics.google.com) and create a new GA4 property for your website.
+  </Step>
+  <Step title="Get your Measurement ID">
+    In the GA4 property, go to **Admin** → **Data Streams** → select your web data stream.
+    Your Measurement ID starts with `G-` (e.g., `G-XXXXXXXXXX`).
+  </Step>
+  <Step title="Get your View ID (for Reporting API)">
+    We use the Google Analytics Reporting API to pull historical data. You'll need to grant access to our service account — we'll provide the service account email and instructions when you're ready to connect.
+  </Step>
+</Steps>
+
+</Accordion>
+
+<Accordion title="App Store Listing">
+
+Your app's store listing is the first impression most potential users will have. We'll write a draft for you, but we need your input on the following:
+
+| Item | Description | Max Length |
+|------|-------------|------------|
+| **App Subtitle** | One-line description under the app name | 30 characters |
+| **Short Description** | Brief summary for search results (Android) | 80 characters |
+| **Full Description** | Complete listing description — we draft, you approve | 4,000 characters |
+| **Keywords** | Comma-separated search keywords (iOS) | 100 characters |
+| **Support URL** | A URL users can visit for help | Your support page URL |
+| **Privacy Policy URL** | Required by both stores | Your privacy policy URL |
+
+</Accordion>
+
+---
+
+## Onboarding Checklist
+
+Use this to track your progress:
+
+- [ ] Brand color (hex code)
+- [ ] App icon (1024×1024 PNG)
+- [ ] Splash screen logo (PNG, transparent)
+- [ ] Navigation logo (PNG, transparent)
+- [ ] Login screen logo (PNG, transparent)
+- [ ] Apple Developer account enrolled
+- [ ] Pixel Punch added to Apple Developer account
+- [ ] Google Play account created
+- [ ] Pixel Punch added to Google Play Console
+- [ ] Platform API credentials provided
+- [ ] App Store listing text approved
+- [ ] Google Analytics connected (optional)
+
+Most partners complete this list in 2–3 hours. The only waiting is Apple's enrollment review (24–48 hours). Start that first.

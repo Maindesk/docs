@@ -1,0 +1,113 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Pixel Punch Documentation",
+  "logo": {
+    "dark": "/images/logo.png",
+    "light": "/images/logo-light.png"
+  },
+  "favicon": "/images/favicon.png",
+  "colors": {
+    "primary": "#007AFF",
+    "light": "#5AC8FA",
+    "dark": "#0051D5"
+  },
+  "topbarLinks": [
+    { "name": "Book a Demo", "url": "https://hellopixelpunch.com" }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://hellopixelpunch.com"
+  },
+  "tabs": [
+    { "name": "Product", "url": "product" },
+    { "name": "User Guide", "url": "user-guide" },
+    { "name": "Admin Guide", "url": "admin-guide" },
+    { "name": "FAQ", "url": "faq" }
+  ],
+  "navigation": [
+    {
+      "group": "Overview",
+      "pages": ["product/introduction", "product/why-mobile-app", "product/features-overview", "product/tech-stack"]
+    },
+    {
+      "group": "Features",
+      "pages": [
+        "product/dashboard",
+        "product/sales-orders",
+        "product/contacts-crm",
+        "product/bookings",
+        "product/forms",
+        "product/products",
+        "product/memberships",
+        "product/push-notifications",
+        "product/live-analytics",
+        "product/live-chat",
+        "product/marketing-campaigns",
+        "product/multilingual",
+        "product/white-label"
+      ]
+    },
+    {
+      "group": "Getting Started",
+      "pages": ["product/onboarding", "product/timeline", "product/pricing"]
+    },
+    {
+      "group": "Getting Started",
+      "pages": ["user-guide/download-install", "user-guide/signing-in", "user-guide/first-launch"]
+    },
+    {
+      "group": "Managing Your Business",
+      "pages": [
+        "user-guide/dashboard",
+        "user-guide/sales-orders",
+        "user-guide/contacts",
+        "user-guide/bookings",
+        "user-guide/forms",
+        "user-guide/products",
+        "user-guide/memberships",
+        "user-guide/members",
+        "user-guide/subscriber-lists"
+      ]
+    },
+    {
+      "group": "App Features",
+      "pages": [
+        "user-guide/website-selector",
+        "user-guide/notifications",
+        "user-guide/notification-preferences",
+        "user-guide/language-settings",
+        "user-guide/profile-settings"
+      ]
+    },
+    {
+      "group": "Platform Management",
+      "pages": [
+        "admin-guide/admin-dashboard",
+        "admin-guide/traffic-analytics",
+        "admin-guide/live-chat",
+        "admin-guide/marketing-campaigns",
+        "admin-guide/push-campaigns",
+        "admin-guide/news-announcements",
+        "admin-guide/automation-rules",
+        "admin-guide/users-management",
+        "admin-guide/projects-management",
+        "admin-guide/project-activation"
+      ]
+    },
+    {
+      "group": "Notifications",
+      "pages": [
+        "admin-guide/user-notifications",
+        "admin-guide/admin-notifications",
+        "admin-guide/livechat-notifications"
+      ]
+    },
+    {
+      "group": "Common Questions",
+      "pages": ["faq/general", "faq/features", "faq/technical", "faq/billing"]
+    }
+  ],
+  "footerSocials": {
+    "website": "https://hellopixelpunch.com"
+  }
+}

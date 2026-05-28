@@ -1,0 +1,71 @@
+---
+title: "Automation Rules"
+description: "Notifications that send themselves — triggered automatically by platform events."
+---
+
+Automation rules let you set up notifications that fire automatically when specific events happen on your platform. Instead of manually reaching out to each user at the right moment, automation rules handle the timing for you — every time, without fail.
+
+## What Automation Rules Do
+
+An automation rule defines:
+1. **A trigger** — an event that causes the rule to fire (e.g., "trial expires in 3 days")
+2. **A message** — the notification content sent when the trigger fires
+3. **The audience** — who receives the notification (usually determined automatically by the trigger)
+
+Once a rule is active, it runs silently in the background. Every user who meets the trigger condition receives the notification automatically, without any manual action from you.
+
+## Setting Up an Automation Rule
+
+<Steps>
+  <Step title="Navigate to Automation Rules">
+    Open the side menu, tap **Marketing**, then tap **Automation Rules**.
+  </Step>
+  <Step title="Tap New Rule">
+    Tap **+ New Rule** to open the rule creation form.
+  </Step>
+  <Step title="Choose a trigger">
+    Select the event that will fire this rule:
+    - **Trial Expiring** — fires X days before a trial ends (you choose the number of days)
+    - **Trial Expired** — fires when a trial ends without converting
+    - **Subscription Renewed** — fires when a subscription auto-renews
+    - **New User** — fires when a user registers
+    - Other platform-specific events
+  </Step>
+  <Step title="Configure trigger timing (if applicable)">
+    For time-based triggers like "Trial Expiring," set how many days in advance to send the notification (e.g., 3 days before expiry).
+  </Step>
+  <Step title="Write the notification title and message">
+    Write the notification content. Be specific and relevant to the trigger — the message should make sense to the user in that exact moment.
+  </Step>
+  <Step title="Activate the rule">
+    Toggle the rule to **Active** and save. It will now fire automatically for every user who meets the trigger conditions going forward.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/admin-guide/automation-rules.png" alt="Automation Rules screen showing a list of active rules with trigger names and status toggles, plus a rule creation form" />
+</Frame>
+
+## Example: Trial Expiring Reminder
+
+One of the most valuable automation rules you can set up is a trial expiration reminder:
+
+- **Trigger:** Trial expiring in 3 days
+- **Title:** "Your free trial ends in 3 days"
+- **Message:** "Upgrade now to keep all your data and features. Choose a plan that works for your business."
+- **Deep link:** Link to your platform's upgrade/billing page
+
+This rule fires automatically for every trial user 3 days before their trial ends — the exact moment when a gentle nudge is most likely to convert them to a paid subscriber.
+
+## Managing Existing Rules
+
+The Automation Rules list shows all your rules with:
+- Rule name and trigger description
+- Status toggle (Active / Paused)
+- Date created and last triggered
+
+Toggle a rule off at any time to pause it without deleting it. Toggle it back on to resume.
+
+<Tip>
+  Less is more with automation rules. A small set of well-timed, genuinely helpful rules outperforms many rules that feel spammy. Start with a trial expiration reminder and a welcome message for new users — then add more over time based on what your users need.
+</Tip>

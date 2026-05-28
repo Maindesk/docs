@@ -1,0 +1,58 @@
+---
+title: "Project Activation"
+description: "Activate a project to a paid plan in seconds, directly from the app."
+---
+
+Project activation is the process of moving a project from trial (or expired) status to a paid subscription plan. It can be done directly from Your App in a few taps — without needing to access a desktop or admin panel.
+
+## How to Activate a Project
+
+<Steps>
+  <Step title="Find the project">
+    Navigate to **Projects Management** in the admin section. Use the status filter to find Trial or Expired projects, or search for the specific project by name.
+  </Step>
+  <Step title="Open the project detail">
+    Tap the project card to open its full detail page.
+  </Step>
+  <Step title="Tap Activate">
+    Tap the **Activate** button on the project detail page.
+  </Step>
+  <Step title="Select a plan">
+    A list of available subscription plans loads from your platform's API. These are the live plans from your pricing configuration — not hardcoded options. Select the plan the user wants to subscribe to.
+  </Step>
+  <Step title="Choose the billing cycle">
+    Select **Monthly** or **Yearly** billing for the selected plan.
+  </Step>
+  <Step title="Confirm activation">
+    Review the plan name and billing cycle, then tap **Confirm**. The project is activated immediately.
+  </Step>
+</Steps>
+
+<Frame>
+  <img src="/images/admin-guide/project-activation.png" alt="Project Activation flow showing the plan selection screen and billing cycle picker" />
+</Frame>
+
+## What Happens After Activation
+
+Once you confirm activation:
+- The project status changes from **Trial** or **Expired** to **Active** immediately
+- The user receives a push notification confirming their subscription is active
+- The project's trial end date is replaced with the subscription start date
+- The subscription appears in your platform revenue metrics
+
+## Plans Are Fetched Live from Your Platform
+
+The list of plans shown during activation comes directly from your platform's API — not from hardcoded values in the app. This means:
+- New plans you add to your platform appear automatically
+- Plans you remove or deactivate no longer appear
+- Pricing changes are reflected immediately
+
+There's nothing to update in the app when you change your plan offerings.
+
+<Tip>
+  Activation is most useful when you've spoken with a user personally and they've agreed to subscribe verbally or via message — you can activate their account on the spot during the call without needing to send them to a checkout page.
+</Tip>
+
+<Warning>
+  Project activation creates a real subscription record in your platform. Double-check the plan name and billing cycle before confirming — activation cannot be undone from within the app and may require manual intervention in your platform's billing system to reverse.
+</Warning>

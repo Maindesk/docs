@@ -1,0 +1,67 @@
+---
+title: "Technical Questions"
+description: "How the app is built, updated, and maintained."
+---
+
+<Accordion title="Do I need technical knowledge to manage the app?">
+  No. Once the app is live, you manage it entirely through the app itself — creating campaigns, managing users, viewing analytics — without any coding or technical work.
+
+  The initial setup (connecting API credentials, Apple and Google developer accounts) requires following step-by-step instructions. Pixel Punch guides you through this during onboarding and handles all the technical implementation on our end.
+</Accordion>
+
+<Accordion title="What technology is the app built on?">
+  Your app is built on a professional, enterprise-grade technology stack:
+
+  - **React Native + Expo** — the same mobile framework used by Instagram, Shopify, Discord, and Pinterest. Native performance on iOS and Android from a single codebase.
+  - **Firebase by Google** — real-time database, server-side functions, and push notification delivery used by millions of apps worldwide.
+  - **Google Analytics 4** — for traffic analytics (optional, can be added at any time).
+  - **Google Cloud Platform** — hosting infrastructure used by Spotify, HSBC, PayPal, and Target.
+
+  See [Tech Stack →](/product/tech-stack) for the complete breakdown.
+</Accordion>
+
+<Accordion title="What about app updates? Do my users need to update manually?">
+  Most updates are delivered **over the air (OTA)** — meaning Pixel Punch pushes improvements directly to all users the next time they open the app. No App Store update required, no user action needed.
+
+  OTA updates handle feature additions, bug fixes, performance improvements, and UI changes. The only time a traditional App Store update is required is for changes to the native layer of the app (rare). Pixel Punch handles all App Store submissions when needed.
+</Accordion>
+
+<Accordion title="What happens if the app crashes or something stops working?">
+  Contact your platform's support team first — they'll assess the issue and escalate to Pixel Punch if it's an app-level problem.
+
+  For critical issues (app not loading, push notifications stopped, data not syncing), Pixel Punch's average response time is within business hours, and critical incidents are prioritized.
+
+  OTA updates mean fixes can be deployed to all users within minutes once a resolution is developed — no waiting for App Store review cycles.
+</Accordion>
+
+<Accordion title="Does the app work offline?">
+  The app requires an internet connection to load data, receive notifications, and sync with your platform. Core functionality — viewing orders, contacts, bookings, and analytics — requires connectivity to fetch the latest data.
+
+  Some recently viewed data may be cached locally on the device, so previously loaded screens may show the last-fetched data if the connection is temporarily unavailable. However, the app is not designed for offline-first use.
+</Accordion>
+
+<Accordion title="What data does Pixel Punch access?">
+  Pixel Punch manages the technical infrastructure of your app (Firebase configuration, build pipeline, OTA update delivery) but does not access or use your platform data or your users' business data.
+
+  Your app's data lives in your own Firebase project — you own it. Pixel Punch's access is limited to deploying updates and managing the app infrastructure.
+</Accordion>
+
+<Accordion title="Is the data secure?">
+  Yes. Security is built into every layer:
+
+  - **All data in transit** is encrypted with TLS 1.3 (HTTPS everywhere)
+  - **User credentials** are stored using iOS Keychain and Android Keystore — the same mechanisms used by Apple Pay and Google Pay
+  - **Firebase** enforces access rules at the database level — users can only access their own data
+  - **Google Cloud Platform** provides 99.99% uptime infrastructure with physical and logical security controls
+
+  Pixel Punch does not store user passwords or sensitive financial data.
+</Accordion>
+
+<Accordion title="Do I need to set up anything on my server or website?">
+  Minimal setup is required on your end. Pixel Punch needs:
+
+  - API credentials to connect to your platform (to pull data for the app)
+  - Webhook configuration so your platform can notify the app when events occur (new orders, bookings, etc.)
+
+  Both are handled during onboarding with Pixel Punch's guidance. You don't need to write any code — you provide the credentials and Pixel Punch handles the integration.
+</Accordion>

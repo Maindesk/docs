@@ -1,0 +1,43 @@
+---
+title: "Admin Notifications"
+description: "Complete reference for all notifications received by platform administrators."
+---
+
+This page is a complete reference for every push notification that Your App sends to platform administrators (you and your team). These notifications keep you informed of platform-level events — new users, subscriptions, trials, and projects — in real time.
+
+## Admin Notification Reference
+
+| Emoji | Notification Title | Trigger | What It Contains | Tap Action |
+|-------|-------------------|---------|-----------------|------------|
+| 👋 | **New User** | A new user registers on the platform | User's name and email address | Opens the user's profile in Users Management |
+| ✅ | **New Subscription** | A user subscribes to a paid plan | User name, plan name, billing cycle | Opens the user's detail page showing the new subscription |
+| 🔄 | **Subscription Renewed** | A user's subscription auto-renews for another period | User name, plan name, renewal date | Opens the user's detail page |
+| ⏰ | **Trial Expiring** | A user's trial is about to end (fires X days before expiry, based on your automation rules) | User name, trial end date | Opens the user's profile — useful for immediate follow-up |
+| ❌ | **Trial Expired** | A user's trial ended without converting to a paid plan | User name, expiry date | Opens the user's profile for review or re-engagement |
+| 🗂️ | **New Project** | A user creates a new project or website on the platform | User name, project name | Opens the project detail in Projects Management |
+
+## Configuring Admin Notifications
+
+Admin notification preferences work the same way as user notification preferences — each type can be individually enabled or disabled.
+
+To manage which admin notifications you receive:
+1. Open the side menu and tap **Profile**.
+2. Tap **Notification Preferences**.
+3. Scroll to the Admin Notifications section.
+4. Toggle each notification type on or off.
+
+## Recommended Settings
+
+For most platform operators, we recommend keeping all admin notifications enabled. The volume is low (these are platform-level events, not per-transaction events), and each one represents something meaningful happening on your platform.
+
+The most actionable notifications are:
+- **Trial Expiring** — triggers an immediate outreach opportunity while the user still has time to convert
+- **New User** — great trigger for a personal welcome message or onboarding check-in
+
+## Multi-Admin Platforms
+
+If multiple team members have admin access to Your App, each admin receives their own notifications based on their individual preferences. There is no shared notification queue — each admin manages their own.
+
+<Tip>
+  The "Trial Expiring" notification is one of the most valuable in the admin suite. Receiving it in real time means you can reach out immediately — before the trial ends — rather than reactively after expiry.
+</Tip>
