@@ -3,7 +3,7 @@ title: "Live Chat Notifications"
 description: "How chat message notifications work and how to manage them."
 ---
 
-Live chat notifications are a distinct category of admin notification — they fire for every new message from a website visitor, and the format is slightly different from other notification types. This page explains how they work, what they look like, and how to configure them.
+Live chat notifications are a distinct category of admin notification, they fire for every new message from a website visitor, and the format is slightly different from other notification types. This page explains how they work, what they look like, and how to configure them.
 
 ## Notification Format
 
@@ -11,33 +11,34 @@ Live chat notifications are a distinct category of admin notification — they f
 
 When a website visitor sends a new message in the chat widget, you receive a push notification in this format:
 
-```
+```text
 💬 [Visitor Name] — via [Widget Name]
 [Message preview]
 ```
 
 **Example:**
-```
+
+```text
 💬 Sarah Johnson — via Main Website Chat
 Hi, I'm interested in your premium plan. Can you tell me more?
 ```
 
-The widget name tells you which website the message came from — critical when you manage multiple websites or have multiple chat widgets.
+The widget name tells you which website the message came from, critical when you manage multiple websites or have multiple chat widgets.
 
 ### Conversation Reopened
 
 When a visitor replies to a conversation that was previously marked as Closed or Awaiting, you receive:
 
-```
+```text
 💬 [Visitor Name] — via [Widget Name]
 [New message preview]
 ```
 
-This looks identical to a new message notification. The distinction is visible when you open the conversation — it was previously closed and is now active again.
+This looks identical to a new message notification. The distinction is visible when you open the conversation, it was previously closed and is now active again.
 
 ## Tapping a Chat Notification
 
-Tapping a live chat push notification opens Your App directly in that conversation — the full message thread is visible immediately. You can read the context and reply without navigating away from the notification.
+Tapping a live chat push notification opens Your App directly in that conversation, the full message thread is visible immediately. You can read the context and reply without navigating away from the notification.
 
 ## How to Disable Live Chat Notifications
 
@@ -54,12 +55,12 @@ If you want to stop receiving chat notifications (for example, outside business 
     Scroll to the admin notifications section and find the **Live Chat Message** toggle.
   </Step>
   <Step title="Toggle off">
-    Tap the toggle to disable live chat notifications. New messages will still appear in the app's Live Chat section — you just won't receive push notifications for them.
+    Tap the toggle to disable live chat notifications. New messages will still appear in the app's Live Chat section, you just won't receive push notifications for them.
   </Step>
 </Steps>
 
 <Frame>
-  <img src="/images/admin-guide/livechat-notifications.png" alt="Notification Preferences screen with the Live Chat Message toggle highlighted" />
+  ![Notification Preferences screen with the Live Chat Message toggle highlighted](/images/admin-guide/livechat-notifications.png)
 </Frame>
 
 <Warning>
@@ -67,9 +68,9 @@ If you want to stop receiving chat notifications (for example, outside business 
 </Warning>
 
 <Tip>
-  If your team has multiple admins, coordinate who has live chat notifications enabled at any given time. Having all admins notified simultaneously means multiple people may reply to the same visitor — which creates a confusing experience. Designate a primary chat responder during business hours.
+  If your team has multiple admins, coordinate who has live chat notifications enabled at any given time. Having all admins notified simultaneously means multiple people may reply to the same visitor, which creates a confusing experience. Designate a primary chat responder during business hours.
 </Tip>
 
 ## Notification Timing
 
-Live chat notifications are webhook-powered — they arrive within seconds of a visitor sending a message. There is no polling interval or delay for chat notifications. The moment a visitor hits "send" in the chat widget, the push notification is on its way to your device.
+Live chat notifications are webhook-powered, they arrive within seconds of a visitor sending a message. There is no polling interval or delay for chat notifications. The moment a visitor hits "send" in the chat widget, the push notification is on its way to your device.
